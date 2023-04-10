@@ -13,6 +13,10 @@
 		928E655829E15B8D000DA229 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 928E655629E15B8D000DA229 /* Main.storyboard */; };
 		928E655A29E15B8F000DA229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 928E655929E15B8F000DA229 /* Assets.xcassets */; };
 		928E655D29E15B8F000DA229 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 928E655B29E15B8F000DA229 /* LaunchScreen.storyboard */; };
+		928E656529E15D57000DA229 /* EmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928E656429E15D57000DA229 /* EmojiTableViewController.swift */; };
+		928E656729E17DB9000DA229 /* EmojiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928E656629E17DB9000DA229 /* EmojiTableViewCell.swift */; };
+		928E656929E19345000DA229 /* emojiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928E656829E19345000DA229 /* emojiModel.swift */; };
+		928E656D29E1DD0D000DA229 /* NewEmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928E656C29E1DD0D000DA229 /* NewEmojiTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		928E655929E15B8F000DA229 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		928E655C29E15B8F000DA229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		928E655E29E15B8F000DA229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		928E656429E15D57000DA229 /* EmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewController.swift; sourceTree = "<group>"; };
+		928E656629E17DB9000DA229 /* EmojiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewCell.swift; sourceTree = "<group>"; };
+		928E656829E19345000DA229 /* emojiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emojiModel.swift; sourceTree = "<group>"; };
+		928E656C29E1DD0D000DA229 /* NewEmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEmojiTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,10 @@
 				928E655029E15B8D000DA229 /* AppDelegate.swift */,
 				928E655229E15B8D000DA229 /* SceneDelegate.swift */,
 				928E655429E15B8D000DA229 /* ViewController.swift */,
+				928E656429E15D57000DA229 /* EmojiTableViewController.swift */,
+				928E656C29E1DD0D000DA229 /* NewEmojiTableViewController.swift */,
+				928E656829E19345000DA229 /* emojiModel.swift */,
+				928E656629E17DB9000DA229 /* EmojiTableViewCell.swift */,
 				928E655629E15B8D000DA229 /* Main.storyboard */,
 				928E655929E15B8F000DA229 /* Assets.xcassets */,
 				928E655B29E15B8F000DA229 /* LaunchScreen.storyboard */,
@@ -138,7 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				928E656929E19345000DA229 /* emojiModel.swift in Sources */,
+				928E656529E15D57000DA229 /* EmojiTableViewController.swift in Sources */,
 				928E655529E15B8D000DA229 /* ViewController.swift in Sources */,
+				928E656729E17DB9000DA229 /* EmojiTableViewCell.swift in Sources */,
+				928E656D29E1DD0D000DA229 /* NewEmojiTableViewController.swift in Sources */,
 				928E655129E15B8D000DA229 /* AppDelegate.swift in Sources */,
 				928E655329E15B8D000DA229 /* SceneDelegate.swift in Sources */,
 			);
@@ -293,8 +309,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +318,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChakyrIT.EmojiReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,8 +340,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +349,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChakyrIT.EmojiReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
